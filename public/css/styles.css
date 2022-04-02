@@ -1,0 +1,319 @@
+/* 
+  Author: Sakchham Kumar Sharma & Ankit Pathak
+  Mentor: Rashmi Raj
+  Date: 15-03-2022
+  Version: 1.0.0
+*/
+
+* {
+    -webkit-user-drag: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --body-color: #000;
+    --bg-color: #121619;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #212729;
+    border: 3px solid #00a650;
+}
+
+::-webkit-scrollbar-track {
+    background-color: pink;
+}
+
+/* Element Selectors */
+
+body {
+    font-weight: normal;
+    line-height: 1;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialised;
+}
+
+/* Header Selectors */
+
+.navbar {
+    font-family: "IBM Plex Sans", serif !important;
+    /* font-family: "Roboto", serif !important; */
+    /* font-family: "Poppins", serif !important; */
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.navbar-brand:hover {
+    color: #14eefc !important;
+    transition: 0.3s;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transition: 0.5s;
+}
+
+/* # Home Section */
+
+#home {
+    padding-top: 7%;
+    background-color: #000;
+    font-family: "IBM Plex Serif", serif;
+}
+
+#home .display-1 {
+    font-style: normal;
+    color: #fff;
+    font-size: 4.5rem !important;
+}
+
+#home .home-para {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.6667;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.3);
+    padding-bottom: 5%;
+}
+
+#home img {
+    padding-top: 3rem;
+    padding-left: 8rem;
+    height: auto;
+}
+
+@media (max-width: 426px) {
+
+    #home {
+        padding-bottom: 7%;
+    }
+
+    #home .display-1 {
+        margin-top: 3rem !important;
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+
+    #home .home-para {
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+
+    #home img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 427px) and (max-width: 1023px) {
+
+    #home {
+        padding-bottom: 7%;
+    }
+
+    #home .display-1 {
+        margin-top: 3rem !important;
+        font-size: 3.4rem !important;
+        text-align: center;
+    }
+
+    #home .home-para {
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
+
+    #home img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    #home img {
+        margin-top: 5rem !important;
+        width: 98%;
+    }
+
+    #home .display-1 {
+        font-size: 3rem !important;
+    }
+
+    #home .home-para {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Section Header */
+
+.target-section {
+    padding: 7% 0;
+}
+
+/* About Section */
+
+#about {
+    background-color: #00a650;
+}
+
+.s-about {
+    background-color: #00a650;
+    color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+  
+.narrower {
+    max-width: 800px;
+}
+
+.brand-border {
+    border-bottom: 3px inset #000;
+}
+
+.footer-brand-border {
+    border-bottom: 3px inset #00a650;
+}
+
+.align-center {
+    margin: auto;
+    text-align: center;
+}
+.s-about .display-1, .s-about h3 {
+    color: #FFFFFF;
+}
+
+.align-button {
+    display: block;
+    margin: auto;
+}
+
+.display-1 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 3.5rem !important;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+  
+.s-about p.lead {
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+.s-about .about-bottom-image {
+    margin-top: 11.2rem;
+    max-width: 1240px;
+}
+
+.row-child {
+    padding: 2% 0;
+}
+
+.about-item {
+    width: 80%;
+    padding: 5% 0;
+}
+
+.about-item h3 {
+    font-size: 2.3rem;
+    font-family: "Poppins", serif;
+    padding-bottom: 4%;
+}
+
+.about-item p {
+    font-size: 1.2rem;
+    font-family: "Poppins", serif;
+    text-align: justify;
+    line-height: 1.5;
+    /* word-spacing: 1.2; */
+    color: rgba(255, 255, 255, 0.69);
+}
+
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .lead {
+        font-size: 0.6rem !important;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    #about .display-3 {
+        font-size: 1rem !important;
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-top: 2%;
+        padding-bottom: 6%;
+    }
+}
+
+/* Working Section */
+
+#working .about-item h3 span, #features .about-item h3 span {
+    display: block;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    border: 5px solid #00a650;
+    border-radius: 50%;
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #00a650;
+}
+
+#working .about-item p, #features .about-item p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* For Mobiles */
+
+@media (max-width: 992px) {
+    .container .display-2 {
+        padding-bottom: 5%;
+    }
+
+    .about-item h3 span {
+        font-size: 13px !important;
+        height: 19px !important;
+        width: 19px !important;
+        border: 2px solid #00a650 !important;
+        text-align: center !important;
+        display: block !important;
+        margin: auto !important;
+    }
+}
