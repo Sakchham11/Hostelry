@@ -317,3 +317,620 @@ abbr:hover {
         margin: auto !important;
     }
 }
+
+/* Footer Section */
+
+.f-footer {
+    background-color: var(--bg-color);
+    font-family: "Poppins", serif;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* For Mobiles */
+
+.footer-social {
+    list-style: none;
+    margin: -0.8rem 0 0 0;
+}
+
+.footer-social li {
+    display: inline-block;
+    font-style: 16px;
+    padding: 0.5rem;
+    margin-right: 4px;
+}
+
+.footer-social li a {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.footer-social li a:hover, .footer-social li a:active {
+    background-color: #00a650;
+    color: #fff;
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+.footer-social li:last-child {
+    margin-right: 0;
+}
+
+.footer-last {
+    padding: 5% 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: -3% 0;
+}
+
+.privacy_policy {
+    width: 50%;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.privacy_policy a {
+    text-decoration: none;
+    color: #067ded;
+}
+
+.privacy_policy a:hover {
+    color: #00a650;
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+.social-icon:hover {
+    color: red;
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: grab;
+}
+
+/* For Mobiles */
+
+@media (max-width: 992px) {
+    #footer .container .display-2 {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 2rem !important;
+    }
+
+    #footer .container .lead {
+        text-align: center;
+        font-size: 1rem !important;
+    }
+
+    .footer-bottom .headlines-2 {
+        text-align: center;
+    }
+
+    .footer-bottom .para-size {
+        text-align: center;
+        font-size: 0.8rem !important;
+    }
+
+    #user-email {
+        padding: 5% !important;
+        height: 2rem !important;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-last {
+        font-size: 0.8rem !important;
+        line-height: 1.5;
+    }
+
+    .para-href {
+        font-size: 1.2rem !important;
+    }
+
+    .footer-subscribe .subscribe-form {
+        padding: 0 !important;
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* For login.ejs, signup.ejs & forgot_password.ejs file */
+
+#login {
+    background-color: #fff7f3;
+    /* font-family: "IBM Sans Serif", serif; */
+}
+
+#login .login-main {
+    width: 35%;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.minimal-frame {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.minimal-frame img {
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+.login-heading {
+    font-family: 'Josefin Sans', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin: 0 !important;
+    user-select: none;
+}
+
+.login-heading a {
+    text-decoration: none;
+    color: #000;
+}
+
+.login-para {
+    font-family: "Roboto", serif;
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.img-logo {
+    border-radius: 50%;
+}
+
+.login-footer {
+    text-align: center;
+    font-family: "Roboto", serif;
+}
+
+.forgot-password {
+    padding: 2rem 0;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #00a650;
+    font-weight: normal;
+}
+
+.forgot-password a:hover, .forgot-password a:active {
+    color: #0d6efd;
+    transition: 0.5s;
+}
+
+.login-display {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 2rem !important;
+}
+
+.minimal-frame a {
+    text-align: center;
+}
+
+.login-href {
+    color: #00a650;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.login-href:hover, .login-href:active {
+    color: #0d6efd;
+    transition: 0.5s;
+}
+
+.policy-footer {
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 5%;
+    line-height: 1.4;
+}
+
+.policy-footer a {
+    color: #00a650;
+    text-decoration: none;
+}
+
+.policy-footer a:hover, .policy-footer a:active {
+    color: #0d6efd;
+    transition: 0.5s;
+}
+
+.reset-heading {
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+.reset-para {
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    word-spacing: 3px;
+    padding-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.gap-2 i {
+    padding-right: 2rem;
+}
+
+.page-intro {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-family: "Roboto", serif;
+}
+
+/* For Mobiles  */
+@media(max-width: 992px) {
+
+    .login-heading a {
+        font-size: 1.8rem !important;
+    }
+
+    .reset-para {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .btn-font {
+        font-size: 1rem !important;
+    }
+
+    #login .login-main {
+        width: 100% !important;
+    }
+
+    .login-display {
+        font-size: 1.3rem !important;
+    }
+
+    .minimal-frame a {
+        font-size: 1.1rem;
+    }
+
+    .login-para {
+        font-size: 0.9rem;
+    }
+}
+
+/* Rendered Body Selectors */
+
+.render-message {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.error-text {
+    font-family: "Poppins", serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    background-color: #00aecf;
+    width: fit-content;
+    min-height: fit-content;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    text-align: center;
+}
+
+/* Terms of Use and Privacy Policy */
+
+.footer-2 {
+    background-color: var(--bg-color);
+    padding-top: 5%;
+}
+
+.footer-2 .footer-last {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container-width {
+    width: 60%;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    display: block;
+    margin: auto;
+    font-weight: 350;
+    /* text-align: justify; */
+}
+
+.container-width h2, .container-width h3 {
+    padding: 1rem 0 !important;
+
+}
+
+.container-width p, .container-width ol li {
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+.container-width ol li {
+    padding: 0.5rem;
+}
+
+/* For Mobiles */
+
+@media(max-width: 992px) {
+    .privacy_policy {
+        width: 50%;
+        text-align: center;
+        padding: 0.5rem 0 !important;
+    }
+
+    .container-width {
+        width: 80%;
+    }
+}
+
+/* Dashboard file */
+#intro-navbar {
+    padding-top: 0;
+}
+
+#intro-navbar .nav-item {
+    padding-right: 1rem;
+}
+
+#note-section {
+    background-color: #1a1a1a;
+    padding: 6% 0;
+    height: 100vh;
+}
+
+#note-section .single-note {
+    background-color: #3e3a3a;
+    padding: 2%;
+    margin: 2%;
+    height: 25vh;
+    border-radius: 15px;
+}
+
+#notes-title {
+    color: #e6e6e6;
+    padding: 2%;
+    letter-spacing: 2px;
+}
+
+#notes-text {
+    color: #a6a6a6;
+    padding: 1% 2%;
+    line-height: 1.3rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.notes-body a {
+    text-decoration: none;
+}
+
+/* create_note ejs file */
+
+.create-note {
+    padding: 7% 0;
+    font-family: "Roboto", serif;
+}
+
+@media (max-width: 426px) {
+    .create-note {
+        margin: 4rem 0;
+    }
+
+    #intro-navbar {
+        padding-top: 4rem;
+    }
+
+    #note-section {
+        min-height: 270vh;
+    }
+
+    #note-section .single-note {
+        height: 35vh;
+    }
+}
+
+/* about.ejs file */
+
+#about-us {
+    padding: 5% 0;
+    background-color: #fff7f3;
+}
+
+.dev-img {
+    border-radius: 100%;
+    max-width: 400px;
+    border: 3px solid #00a650;
+}
+
+#about-us h1 {
+    font-family: "IBM Plex Sans", serif;
+    font-size: 4.9rem;
+    padding: 2% 0;
+    color: #00a650;
+}
+
+#about-us h3 {
+    color: #00a650;
+    font-family: "IBM Plex Sans", serif;
+    font-size: 1.9rem;
+    padding: 2% 0;
+}
+
+#about-us h4 {
+    color: #00a650;
+    font-family: "IBM Plex Sans", serif;
+}
+
+#about-us p {
+    color: #555;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 426px) {
+    #about-us {
+        padding-top: 20%;
+    }
+
+    .dev-img {
+        max-width: 250px;
+    }
+
+    #about-us h1 {
+        font-size: 3rem;
+        padding-bottom: 7%;
+    }
+
+    #about-us h3 {
+        font-size: 1.5rem !important;
+        padding: 0;
+    }
+
+    #about-us h4 {
+        font-size: 1.3rem !important;
+    }
+
+    #about-us p {
+        font-size: 0.7rem !important;
+        padding-bottom: 3%;
+    }
+}
+
+@media (min-width: 726px) and (max-width:1480px) {
+    .dev-img {
+        max-width: 270px;
+    }
+
+    .create-note {
+        margin: 2rem 0;
+    }
+
+    #intro-navbar {
+        padding-top: 4rem;
+    }
+
+    #note-section {
+        height: 270vh;
+    }
+
+    #note-section .single-note {
+        height: 35vh;
+    }
+}
+
+/* For notes.ejs file */
+
+#notes-display {
+    padding: 5rem 0;
+    background-color: #262626;
+    height: 150vh;
+    color: #f2f2f2;
+}
+
+#notes-display .display-title {
+    font-size: 2.2rem;
+    font-family: "Poppins", serif !important;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+}
+
+.delete-note {
+    padding: 0 125%;
+}
+
+.update-note {
+    padding: 0 70%;
+}
+
+@media (max-width: 780px) {
+    .delete-note {
+        padding: 0 30%;
+    }
+
+    .update-note {
+        padding: 0 37%;
+    }
+}
+
+#notes-display .display-content {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.icon-size {
+    font-size: 1.5rem;
+    color: #f2f2f2;
+
+}
+
+.icon-size:hover {
+    color: #14eefc;
+    transition: 0.3s;
+}
+
+@media (max-width: 426px) {
+    #notes-display {
+        padding: 1rem 0;
+    }
+}
+
+/* For update.ejs file */
+
+#update-note {
+    padding: 7% 0;
+}
+
+/* For change_password.ejs file */
+
+#change-password {
+    padding-top: 0;
+}
+
+@media (max-width: 550px) {
+    #change-password {
+        padding-top: 22%;
+    }
+}
+
+/* For notice.ejs file */
+
+#notice {
+    margin: 5rem;
+}
+
+#notice .notice-heading {
+    font-family: "Roboto", serif;
+    text-align: center;
+}

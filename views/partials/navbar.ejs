@@ -12,10 +12,16 @@
                         <a class="nav-link" href="/about"><i class="fas fa-users"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/register">Sign Up</a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Log In</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="/user-login">As Student</a></li><hr>
+                                <li><a class="dropdown-item" href="/admin-login">As Admin</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">Log In</a>
+                        <a class="nav-link" href="/register">Sign Up</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/notice">Notice Board</a>
