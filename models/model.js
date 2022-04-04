@@ -15,5 +15,11 @@ const adminSchema = new mongoose.Schema ({
     password: String
 });
 
+const noticeSchema = new mongoose.Schema ({
+    title: String,
+    link: String
+});
+
 exports.user = userSchema;
 exports.admin = adminSchema;
+exports.notice = noticeSchema;
