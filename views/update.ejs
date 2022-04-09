@@ -1,0 +1,45 @@
+<%- include('partials/dashbar') %>
+
+<script>
+    document.title = "Welcome to the Profile! | HOSTELRY";
+</script>
+
+<section id="update-profile" class="update-profile">
+    <div class="container">
+        <div class="update-section">
+            <form method="POST" action="/update">
+                <h2 style="text-align: center; padding-bottom: 5%;">Update the Profile</h2>
+                <div class="mb-3">
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Name" name="userName">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter University Roll Number" name="userURoll">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter College Roll Number" name="userCRoll">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Hostel Number" name="userHostel">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Room Number" name="userRoom">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Batch Details" aria-describedby="userBatchDetail" name="userBatchDetails">
+                    <div id="userBatchDetail" class="form-text">
+                        Please Enter Batch Details like 2018 CSE B.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter the Address" name="userAddress">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-outline-primary btn-lg">Continue</button>
+                </div>  
+                <p class="error-text" style="margin-top: 2rem;"><%= messages %> </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

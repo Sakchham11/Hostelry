@@ -2,12 +2,15 @@ const mongoose = require('mongoose');
 
 // User Schema
 const userSchema = new mongoose.Schema ({
-    name: String,
+    name: {type: String, default: 'User'},
     email: String,
     password: String,
-    uroll: String,
-    croll: String,
-    room: String
+    uroll: {type: String, default: 'N/A'},
+    croll: {type: String, default: 'N/A'},
+    hostel: {type: String, default: 'N/A'},
+    room: {type: String, default: 'N/A'},
+    batch: {type: String, default: 'N/A'},
+    address: {type: String, default: 'N/A'}
 });
 
 const adminSchema = new mongoose.Schema ({

@@ -1,7 +1,47 @@
-<%- include('partials/dashbar') %>
+<%- include('partials/header') %>
 
 <script>
     document.title = "Welcome to the Panel! | HOSTELRY";
 </script>
+
+<header class="h-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Hostelry</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout"><abbr title="Log Out"><i class="fas fa-sign-out-alt"></i></abbr></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="bill-form" class="bill-form">
+    <div class="container login-main">
+        <form method="POST" action="/panel">
+            <img src="/img/favicon.png" alt="HOSTELRY_LOGO">
+            <h2 style="text-align: center; padding-bottom: 5%;">Upload the Notice</h2>
+            <div class="mb-3">
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Notice Title" name="noticeTitle">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Enter the Notice" name="noticeLink">
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-outline-primary btn-lg">Continue</button>
+            </div>  
+            <p class="error-text" style="margin-top: 2rem;"><%= messages %> </p>
+        </form>
+        <div style="width: 80%; display: block; margin: auto;">
+            <p class="notice-para">To upload the notice, first enter the notice name and then upload that notice to the Google Drive and upload that link here.</p>
+        </div>
+    </div>
+</section>
 
 <%- include('partials/footer') %>

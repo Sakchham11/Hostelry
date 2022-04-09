@@ -4,4 +4,21 @@
     document.title = "Welcome to the Dashboard! | HOSTELRY";
 </script>
 
+<section id="dashboard" class="dashboard">
+    <div class="container">
+        <div class="user-details">
+            <h2>Hello, <%= messages[0].name.split(' ')[0] %> </h2>
+            <hr>
+            <p class="user-data">Full Name: <%= messages[0].name %></p>
+            <p class="user-data">University Roll Number: <%= messages[0].uroll %></p>
+            <p class="user-data">College Roll Number: <%= messages[0].croll %></p>
+            <p class="user-data">Hostel Number: <%= messages[0].hostel %></p>
+            <p class="user-data">Room Number: <%= messages[0].room %></p>
+            <p class="user-data">Batch Details: <%= messages[0].batch %></p>
+            <p class="user-data">Permanent Address: <%= messages[0].address %></p>
+            <hr><p>If you want to pay mess bill or, any other payment like fine etc. then click <a href="/payment">Here</a>.</p>
+        </div>
+    </div>
+</section>
+
 <%- include('partials/footer') %>

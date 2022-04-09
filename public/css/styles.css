@@ -1,6 +1,5 @@
 /* 
   Author: Sakchham Kumar Sharma & Ankit Pathak
-  Mentor: Rashmi Raj
   Date: 15-03-2022
   Version: 1.0.0
 */
@@ -14,6 +13,10 @@
 :root {
     --body-color: #000;
     --bg-color: #121619;
+}
+
+body {
+    background-color: #fff7f3;
 }
 
 /* Scrollbar */
@@ -454,7 +457,7 @@ abbr:hover {
     /* font-family: "IBM Sans Serif", serif; */
 }
 
-#login .login-main {
+.login-main {
     width: 35%;
     background-color: #fff;
     display: block;
@@ -933,4 +936,99 @@ table {
 #notice .notice-heading {
     font-family: "Roboto", serif;
     text-align: center;
+}
+
+#notice .notice-div {
+    margin: 0 13% 0 20%;
+}
+
+#notice-title-id {
+    font-size: 1.38rem;
+}
+
+#notice-title-id a {
+    text-decoration: none;
+}
+
+@media (max-width: 550px) {
+    #notice .display-2 {
+        font-size: 1.4rem;
+    }
+
+    #notice .notice-div {
+        margin: 0;
+    }
+
+    #notice-title-id {
+        font-size: 0.7rem;
+    }
+}
+
+/* For panel.ejs file */
+
+#bill-form {
+    margin-top: 7%;
+    height: 100vh;
+    background-color: #fff7f3;
+}
+
+#bill-form img {
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.notice-para {
+    font-size: 1rem; 
+    color:rgba(0, 0, 0, 0.5);
+    margin: 2rem 0 0;
+    text-align: center;
+    line-height: 1.5rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 550px) {
+    #bill-form {
+        margin-top: 25%;
+    }
+
+    #bill-form .login-main {
+        width: 100%;
+    }
+}
+
+/* For update.ejs file */
+
+#update-profile {
+    margin-top: 6rem;
+}
+
+#update-profile .update-section {
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 550px) {
+    #update-profile .update-section {
+        width: 100%;
+    }
+}
+
+/* For dashboard.ejs file */
+
+#dashboard {
+    margin-top: 6rem;
+}
+
+#dashboard .user-details {
+    width: 60%;
+    margin: auto;
+}
+
+#dashboard .user-data {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 1vh 0;
 }

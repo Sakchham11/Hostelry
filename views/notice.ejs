@@ -6,7 +6,14 @@
 
 <section id="notice" class="notice-board">
     <div class="container">
-        <h1 class="display-3 notice-heading">Notice Board</h1>
+        <h1 class="display-2 notice-heading">Notice Board</h1>
+        <div class="notice-div">
+            <table>
+                <% messages.reverse().forEach(function(notice) { %>
+                    <li style="float: left;"><tr><p id="notice-title-id"><a href="<%= notice.link %>"><%= notice.title %></a></p></tr></li>
+                <% }) %> 
+            </table>
+        </div>
     </div>
 </section>
 
