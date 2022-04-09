@@ -1023,12 +1023,34 @@ table {
 }
 
 #dashboard .user-details {
-    width: 60%;
+    width: 72%;
     margin: auto;
 }
 
-#dashboard .user-data {
+.user-data {
     font-size: 1.2rem;
     color: rgba(0, 0, 0, 0.85);
-    padding: 1vh 0;
+    padding: 2vh 0;
+}
+
+span {
+    position: absolute;
+    right: 20%;
+}
+
+.last-para {
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+@media (max-width: 550px) {
+    #dashboard .user-details {
+        width: 100%;
+    }
+
+    span {
+        position: static;
+    }
 }

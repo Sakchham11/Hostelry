@@ -8,9 +8,9 @@ const user = process.env.USER;
 const clusterURL = process.env.URL;
 
 // Database Connection URI
-const uri = "mongodb+srv://" + user + ":" + password + "@" + clusterURL + db + "?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://" + user + ":" + password + "@" + clusterURL + db + "?retryWrites=true&w=majority";
 // Localhost Connection URI
-// const uri = "mongodb://localhost:27017/hostelDB";
+const uri = "mongodb://localhost:27017/hostelDB";
 
 // Connecting to the Database
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
